@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int valor1, valor2, valor3, entrada;
+        long valor1, valor2, valor3, entrada;
         valor1 = 0;
         valor2 = 1;
 
         System.out.println("Digite o número de termos: ");
-        entrada = in.nextInt();
+        entrada = in.nextLong();
 
         System.out.println("1º termo = " + valor1);
         System.out.println("2º termo = " + valor2);
