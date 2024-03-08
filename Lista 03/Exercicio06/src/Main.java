@@ -8,6 +8,7 @@ public class Main {
         valor1 = in.nextLong();
         System.out.println("Digite o segundo Número Inteiro:");
         valor2 = in.nextLong();
+
         NumMaior =Math.max(valor1,valor2);
         NumMenor =Math.min(valor1,valor2);
 

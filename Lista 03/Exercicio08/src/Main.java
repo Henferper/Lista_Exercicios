@@ -3,25 +3,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        long valor, i;
+        boolean primo;
+        primo = true;
+
         System.out.println("Digite um número inteiro:");
-        int valor = in.nextInt();
-        boolean Primo = true;
+        valor = in.nextLong();
 
-        if (valor <= 1) {
-            Primo = false;
-        } else {
-            for (int i = 2; i <= Math.sqrt(valor); i++) {
-                if (valor % i == 0) {
-                    Primo = false;
-                    break;
-                }
-            }
+        if (valor ==1){
+            System.out.println("Não é Primo");
         }
-
-        if (Primo) {
-            System.out.println("O número " + valor + " é primo");
+        for (i = valor/2; i > 1; i--) {
+            if (valor % i == 0) {
+                primo = false;
+                break;
+            }
+        }if (primo) {
+            System.out.println("É Primo");
         } else {
-            System.out.println("O número " + valor + " não é primo");
+            System.out.println("Não é primo");
         }
     }
 }
